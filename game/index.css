@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.game{
+    border:1px solid black;
+    width:1500px;
+    height:900px;
+    margin:0 auto;
+    position: relative;
+    /* overflow: hidden; */
+    
+}
+.sky{
+    position: absolute;
+    top:100px;
+    left:1500px;
+    background: url('../img/sky1.png')0 0/contain no-repeat;
+    width:320px;
+    height:320px;
+    animation:skyAnim 1005s linear infinite;
+}
+
+
+.mes{
+    color:cadetblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    
+}
+.road{
+    width:1400px;
+    height:10px;
+    background-color: cadetblue;
+    margin:500px auto;
+}
+.person{
+    position: absolute;
+    top:400px;
+    left:400px;
+    background-image: url('../person/beGo_00.png');
+    background-repeat: no-repeat;
+    width:100px;
+    height:100px;
+    background-size:contain;
+}
+.ruk{
+    position: absolute;
+    top:650px;
+    left:1100px;
+    background: url('../img/rukzak.png')0 0/contain no-repeat;
+    width:200px;
+    height:200px;
+}
+.woodRuk{
+    position: absolute;
+    top:590px;
+    left:1100px;
+    background: url('../img/wood/wood0.png')0 0/contain no-repeat;
+    width:100px;
+    height:100px;
+}
+.tree{
+    position: absolute;
+    top:200px;
+    left:1200px;
+    background: url('../person/tree1.png')0 0/contain no-repeat;
+    width:300px;
+    height:300px;
+}
+.meTree{
+    position: absolute;
+    top:520px;
+    left:1200px;
+    visibility: hidden;
+    animation: miganie 3s linear infinite;
+}
+.mesRuk{
+    position: absolute;
+    top:620px;
+    left:800px;
+}
+.mesRuk2{
+    color:black;
+    position: absolute;
+    font-size:20px;
+    top:660px;
+    left:800px;
+}
+@keyframes miganie{
+    0%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.2;
+    }
+}
+.total{
+    position: absolute;
+    top:350px;
+    left:1100px;
+    font-size: 34px;
+}
+.total2{
+    position: absolute;
+    top:362px;
+    left:1000px;
+    font-size: 14px;
+}
+.woodAll{
+    position: absolute;
+    top: 400px;
+    left:1020px;
+    width: 150px;
+    height: 100px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    transform: rotate(180deg);
+   
+    
+    
+}
+.firewood{
+    background: url('../img/wood.png')0 0/contain no-repeat;
+    width: 20px;
+    height: 20px;
+    
+}
+.firewood{
+    background: url('../img/wood.png')0 0/contain no-repeat;
+    width: 20px;
+    height: 20px;
+    
+}
+.firewood:nth-child(3n){
+
+    margin-left:3px;
+    
+}
+.fireWoodPress{
+    position: absolute;
+    top: 530px;
+    left:1020px;
+    text-align: center;
+    animation: miganie 3s linear infinite;
+    visibility: hidden;
+}
+.warnehouse{
+    position: absolute;
+    top: 283px;
+    left:120px;
+    background: url('../img/house.png')0 0/contain no-repeat;
+    width: 220px;
+    height: 220px;
+
+ 
+   
+    
+}
+.warnehouse2{
+    position: absolute;
+    top: -22px;
+    left:10px;
+    
+    width: 200px;
+    height: 220px;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    transform: rotate(180deg);
+    
+}
+.iconHouse{
+    position: absolute;
+    top: 40px;
+    left:240px;
+    background: url('../img/skladicon.png')0 0/contain no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.iconHouse:hover{
+    position: absolute;
+    top: 40px;
+    left:240px;
+    background: url('../img/skladicon1.png')0 0/contain no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.woodHouse{
+    
+    
+    background: url('../img/woodHouse.png')0 0/contain no-repeat;
+    width: 10px;
+    height: 10px;
+}
